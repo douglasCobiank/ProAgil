@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System.Net.Mime;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace NovoProjeto.API.Migrations
 {
@@ -16,7 +17,8 @@ namespace NovoProjeto.API.Migrations
                     DataEvento = table.Column<string>(nullable: true),
                     Tema = table.Column<string>(nullable: true),
                     QtdPessoas = table.Column<int>(nullable: false),
-                    Lote = table.Column<string>(nullable: true)
+                    Lote = table.Column<string>(nullable: true),
+                    ImagemURL = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

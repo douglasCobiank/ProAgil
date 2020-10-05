@@ -29,6 +29,8 @@ namespace NovoProjeto.API.Migrations
                     b.Property<int>("QtdPessoas");
 
                     b.Property<string>("Tema");
+                    
+                    b.Property<string>("ImagemURL");
 
                     b.HasKey("EventoId");
 

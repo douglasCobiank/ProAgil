@@ -32,6 +32,8 @@ namespace NovoProjeto.API.Migrations
 
                     b.Property<string>("Tema");
 
+                    b.Property<string>("ImagemURL");
+
                     b.HasKey("EventoId");
 
                     b.ToTable("Eventos");
